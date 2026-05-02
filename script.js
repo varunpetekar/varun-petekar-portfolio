@@ -26,7 +26,8 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',
 // PARALLAX
 window.addEventListener('scroll',()=>{const img=document.querySelector('#hero .hero-bg img');if(img)img.style.transform=`scale(1.07) translateY(${scrollY*.28}px)`;});
 
-// CHATBOT
+// CHATBOT - DISABLED
+/*
 const chatbotToggle=document.getElementById('chatbotToggle');
 const chatbotPopup=document.getElementById('chatbotPopup');
 const chatbotClose=document.getElementById('chatbotClose');
@@ -311,3 +312,4 @@ chatbotSend.addEventListener('click',sendMessage);
 chatbotInput.addEventListener('keypress',(e)=>{
   if(e.key==='Enter')sendMessage();
 });
+*/
