@@ -37,7 +37,8 @@ if(savedTheme==='light'){
 }
 
 // Toggle theme on nav-logo click
-navLogo.addEventListener('click',()=>{
+navLogo.addEventListener('click',(e)=>{
+  e.preventDefault(); // Prevent scrolling to hero
   body.classList.toggle('light-theme');
   
   // Save theme preference
