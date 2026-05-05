@@ -27,8 +27,8 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;justify-content:space-between;align-items:center;padding:2rem 4rem;transition:padding .3s}
 nav.sc{padding:1rem 4rem}
 .nav-logo-container{display:flex;align-items:center;gap:1rem}
-.nav-logo{font-family:var(--fd);font-size:1.4rem;letter-spacing:.1em;color:var(--white);background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.3);cursor:pointer;padding:0.5rem 1rem;transition:all .3s ease;position:relative;z-index:1001;border-radius:6px;backdrop-filter:blur(10px)}
-.nav-logo:hover{transform:scale(1.05);background:rgba(255,255,255,0.2);border-color:rgba(255,255,255,0.5)}
+.nav-logo{font-family:var(--fd);font-size:1.4rem;letter-spacing:.1em;color:var(--white);background:none;border:none;cursor:pointer;padding:0;transition:transform .3s ease;position:relative;z-index:1001}
+.nav-logo:hover{transform:scale(1.1)}
 .theme-indicator{font-family:var(--fm);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--white);opacity:.8;transition:opacity .3s ease;white-space:nowrap;display:none;position:relative;z-index:1001}
 .nav-links{display:flex;gap:2.5rem;list-style:none}
 .nav-links a{color:var(--white);text-decoration:none;font-family:var(--fm);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;opacity:.7;transition:opacity .3s}
@@ -44,8 +44,8 @@ body.light-theme .hero-bg img{opacity:.3}
 body.light-theme .hero-bg::after{background:linear-gradient(to top,var(--black) 30%,transparent 70%)}
 
 /* Light theme navigation */
-body.light-theme .nav-logo{color:var(--black);background:rgba(0,0,0,0.1);border-color:rgba(0,0,0,0.3)}
-body.light-theme .nav-logo:hover{background:rgba(0,0,0,0.2);border-color:rgba(0,0,0,0.5)}
+body.light-theme .nav-logo{color:var(--black)}
+body.light-theme .nav-logo:hover{color:var(--black)}
 body.light-theme .theme-indicator{color:var(--black)}
 body.light-theme .nav-links a{color:var(--black)}
 .hero-tag{font-family:var(--fm);font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gray-400);margin-bottom:1.5rem;position:relative;z-index:2;opacity:0;transform:translateY(20px);animation:fU .8s ease forwards .4s}
