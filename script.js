@@ -26,29 +26,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',
 // PARALLAX
 window.addEventListener('scroll',()=>{const img=document.querySelector('#hero .hero-bg img');if(img)img.style.transform=`scale(1.07) translateY(${scrollY*.28}px)`;});
 
-// THEME SWITCHER
-const navLogo=document.querySelector('.nav-logo');
-const body=document.body;
-
-// Load saved theme preference
-const savedTheme=localStorage.getItem('theme');
-if(savedTheme==='light'){
-  body.classList.add('light-theme');
-}
-
-// Toggle theme on nav-logo click
-navLogo.addEventListener('click',(e)=>{
-  e.preventDefault(); // Prevent scrolling to hero
-  body.classList.toggle('light-theme');
-  
-  // Save theme preference
-  if(body.classList.contains('light-theme')){
-    localStorage.setItem('theme','light');
-  }else{
-    localStorage.setItem('theme','dark');
-  }
-});
-
 // CHATBOT - DISABLED
 /*
 const chatbotToggle=document.getElementById('chatbotToggle');
@@ -223,7 +200,7 @@ async function sendMessage(){
 
 // Call Gemini API
 async function callGeminiAPI(message){
-  const apiKey='API_KEY_GOES_HERE'; // Replace with your actual API key
+  const apiKey='AIzaSyBav5AcGAdZ2ZtjLsCVgOOmzYcZwnnX9Eo'; // Replace with your actual API key
   
   // Check if we have resume content
   if(!resumeText||resumeText.trim()===''){
