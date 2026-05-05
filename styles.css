@@ -27,9 +27,9 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;justify-content:space-between;align-items:center;padding:2rem 4rem;mix-blend-mode:difference;transition:padding .3s}
 nav.sc{padding:1rem 4rem}
 .nav-logo-container{display:flex;align-items:center;gap:1rem}
-.nav-logo{font-family:var(--fd);font-size:1.4rem;letter-spacing:.1em;color:#fff;background:none;border:none;cursor:pointer;padding:0;transition:transform .3s ease}
-.nav-logo:hover{transform:scale(1.1)}
-.theme-indicator{font-family:var(--fm);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:#fff;opacity:.7;transition:opacity .3s ease;white-space:nowrap;display:none}
+.nav-logo{font-family:var(--fd);font-size:1.4rem;letter-spacing:.1em;color:#fff;background:none;border:1px solid rgba(255,255,255,0.2);cursor:pointer;padding:0.5rem 1rem;transition:transform .3s ease,border-color .3s ease;position:relative;z-index:1001;border-radius:4px}
+.nav-logo:hover{transform:scale(1.1);border-color:rgba(255,255,255,0.5)}
+.theme-indicator{font-family:var(--fm);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:#fff;opacity:.7;transition:opacity .3s ease;white-space:nowrap;display:none;position:relative;z-index:1001}
 .nav-links{display:flex;gap:2.5rem;list-style:none}
 .nav-links a{color:#fff;text-decoration:none;font-family:var(--fm);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;opacity:.5;transition:opacity .3s}
 .nav-links a:hover{opacity:1}
