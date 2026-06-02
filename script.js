@@ -150,6 +150,7 @@ EDUCATION:
 - HSC Commerce, S. H. Jhondhale Polytechnic, Mumbai University (2019–2021)
 
 CERTIFICATIONS:
+- NumPy Programming Mastery: Learn Python for Data Analysis, Udemy (May 2026)
 - Google Cloud Platform (GCP) Fundamentals, Udemy (Feb 2025)
 - Microsoft Power BI: Data Analysis & Visualization, Udemy (Jan 2025)
 
